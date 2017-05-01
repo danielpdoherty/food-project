@@ -8,23 +8,43 @@ div{
 	margin-top: 50px;
 }
 
+
+
 a{
 	color: #FBD8C5;
 	text-decoration: none;
 	font-size: 30px;
 }
 
-.jSlots-wrapper {  
-    overflow: hidden; /* to hide the magic */  
-    height: 40px; /* whatever the height of your list items are */  
-    display: inline-block; /* to size width correctly, can use float too, or width*/  
-    border: 1px solid #999;  
-}  
+img{
+	height: 150px;
+	width: 150px;
+	border: solid 5px white;
+	border-radius: 100%;
+}
 
 ul {
  list-style: none;
 }
 
-li{
+
+.header{	
+	background: red;
+}
+
+.appName{
+	float: left;
 	font-size: 30px;
+}
+
+.headerLinks{
+	float: right;
+}
+
+.active{
+	color: black;
+}
+
+footer{
+	margin-top: 50px;
 }

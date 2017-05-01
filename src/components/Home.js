@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import omni from '../img/omni.png';
+import vege from '../img/vege.jpg';
+import './typingAnim.css';
 
 class Home extends Component {
 	render(){
@@ -17,11 +20,11 @@ class Home extends Component {
 					</h3>
 				</div>
 				<div className="row">
-					<div className="col-md-6">
-						<Link to="/omni">Omnivore!</Link>
+					<div className="col-md-6 choiceBox">
+						<Link to="/omni"><img src={omni} alt="Omnivore"/>Omnivore!</Link>
 					</div>
-					<div className="col-md-6">
-						<Link to="/vege">Vegetarian!</Link>
+					<div className="col-md-6 choiceBox">
+						<Link to="/vege"><img src={vege} alt="Vegetarian"/>Vegetarian!</Link>
 					</div>
 				</div>
 			</div>
