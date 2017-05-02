@@ -1,0 +1,29 @@
+{
+  "food": {
+    "omnivore": {
+      "burger": {
+      	"name": "Burger",
+      	"imgUrl": "placeholder",
+      	"searchTerm": "burger"
+      		},
+      "pizza": {
+      	"name": "Pizza",
+      	"imgUrl": "placeholder",
+      	"searchTerm": "pizza"
+      		}
+  		},
+  	"vegetarian": {
+  		"salad":{
+  			"name": "Salad",
+      		"imgUrl": "placeholder",
+      		"searchTerm": "salad"
+  			},
+  		"falafel":{
+  			"name": "Falafel",
+      		"imgUrl": "placeholder",
+      		"searchTerm": "falafel"
+  			}
+  		}
+	}
+
+}
