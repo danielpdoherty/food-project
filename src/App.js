@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.search('monkeys');
+    this.search('mexican');
   }
 
   changeSelectedVideo(video){
@@ -33,15 +33,45 @@ class App extends Component {
     })
   }
 
+  state = {
+
+    position: 'unknown'
+
+  };
+
+// Now, in componentDidMount, we can use navigator.geolocation.getCurrentPosition to get our position in terms of latitude and longitude, then set our state:
+
+  componentDidMount() {
+
+    navigator.geolocation.getCurrentPosition(
+
+      (position) => {
+
+        this.setState({position});
+
+      },
+
+      (error) => alert(error),
+
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+
+    );
+
+  }
+
   search(term){
+    var lat = this.state.position.coords.latitude;
+    var lng = this.state.position.coords.longitude;
+    var latlng = "ll=" + String(lat) + "," + String(lng);
     axios.get('https://maps.googleapis.com/maps/api/js',{
       params: {
-        q: term,
-        key: 'AIzaSyD4Cx5fT60X--BRDV8DjH73VX6SMqV6iL4',
-        libraries: 'places',
-        callback: 'initMap',
-        type: 'video',
-        part: 'snippet'
+        term: term + latlng,
+        key: 'AIzaSyBYVFaVlAm7z6PBipNIaVb-6SZxWY8Cj-o',
+        libraries: 'places'
+
+        // client_id: 'zBUUcNNN5aTMYPsDH4NboA',
+        // client_secret: 'wbw8U5Spz89sO5rO6xXMsO9t1W8rfvDONQ3RqvpSkwSqW1NB1jJrGacr4gY3m2ms',
+        // access_token: 'up2EoHoFD_BczuphEKC_1gqqijFFTW_Ejc4XkJhZiJIf3i8TgJH-8VTGVSayID_m6_D6tVN8yUt9amDcGPOhKZPGfleZrfOM-fN1wIdWGP1U8_r53V17TqGbQpcDWXYx'
       }
     }).then((response)=>{
       console.log(response);

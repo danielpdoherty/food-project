@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
+import meatpizza from '../img/meatpizza.jpg';
+import tacos from '../img/tacos.jpg';
+import steak from '../img/steak.jpg';
+import burger from '../img/burger.jpg';
+import kungpaochicken from '../img/kungpaochicken.jpg';
+import pulledpork from '../img/pulledpork.jpg';
+import kebab from '../img/kebab.jpg';
+import chickenwings from '../img/chickenwings.jpg';
 import firebase, { database, firebaseListToArray } from '../firebase';
+
 
 class Omnivore extends Component {
 	constructor(props){
@@ -63,6 +72,7 @@ class Omnivore extends Component {
 						{ omnivore }
 				</div>
 			</div>	
+
 			);
 	}
 }
