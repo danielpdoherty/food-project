@@ -1,0 +1,34 @@
+{
+  "food":{
+    "omnivore": [
+      {
+      	"name": "Burger",
+      	"imgUrl": "PLACEHOLDER",
+      	"searchTerm": "burger"
+      		},
+          {    	
+      	"name": "Pizza",
+      	"imgUrl": "/img/pizza.png",
+      	"searchTerm": "pizza"
+      		},
+          {    	
+      	"name": "Tacos",
+      	"imgUrl": "/img/tacos.jpg",
+      	"searchTerm": "tacos"
+      		}
+  		],
+  	"vegetarian": [
+      {
+  			"name": "Salad",
+      		"imgUrl": "/img/salad.jpg",
+      		"searchTerm": "salad"
+  			},
+        {
+  			"name": "Falafel",
+      		"imgUrl": "/img/falafel.jpg",
+      		"searchTerm": "falafel"
+  			}
+  		]
+	}
+
+}
