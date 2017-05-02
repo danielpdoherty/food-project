@@ -12,7 +12,7 @@ class Header extends Component {
 	      		<li><Link to="/vege" activeClassName="active">Vegetarian</Link></li>
 	      		<li><Link to="/search" activeClassName="active">Search</Link></li>
 	      	</ul>
-      	</nav>
+    </nav>
     );
   }
 }
