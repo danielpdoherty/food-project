@@ -1,26 +1,36 @@
 {
   "food": {
     "omnivore": {
-      "burger": {
+      "title": "Burger",
+      "properties": {
       	"name": "Burger",
-      	"imgUrl": "placeholder",
+      	"imgUrl": "PLACEHOLDER",
       	"searchTerm": "burger"
       		},
-      "pizza": {
+      "title": "Pizza",
+      "properties": {      	
       	"name": "Pizza",
-      	"imgUrl": "placeholder",
+      	"imgUrl": "/img/pizza.png",
       	"searchTerm": "pizza"
+      		},
+      "title": "Tacos",
+      "properties": {      	
+      	"name": "Tacos",
+      	"imgUrl": "/img/tacos.jpg",
+      	"searchTerm": "tacos"
       		}
   		},
   	"vegetarian": {
-  		"salad":{
+  		"title": "Salad",
+      	"properties": {
   			"name": "Salad",
-      		"imgUrl": "placeholder",
+      		"imgUrl": "/img/salad.jpg",
       		"searchTerm": "salad"
   			},
-  		"falafel":{
+  		"title": "Falafel",
+      	"properties": {
   			"name": "Falafel",
-      		"imgUrl": "placeholder",
+      		"imgUrl": "/img/falafel.jpg",
       		"searchTerm": "falafel"
   			}
   		}
