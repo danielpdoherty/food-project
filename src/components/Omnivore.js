@@ -7,6 +7,7 @@ class Omnivore extends Component {
 
 		this.ref = firebase.database().ref();
 		this.state = {
+			id : Date.now(),
 			food : []
 		}
 	}
@@ -42,15 +43,14 @@ class Omnivore extends Component {
 	render(){
 		const food = this.state.food.map((food) => {
 			console.log('food map', food);
-      		let foodLength = food.id;
-      		if(foodLength.length < 9){
+      		// let foodLength = food.id;
+      		// if(foodLength.length < 9){
+      			for(var i = 0, x = food.length; i < x ; i++){
       		return (
-      			<div className="col-md-3">	
-      				<a href="#" key={ food.id } name={ food.id }>
-							<img src={food.properties.imgUrl} alt="Food" />
-							{ food.properties.name }
+      				<a href="#" key={ this.state.id } name={ food.omnivore[0].name }>
+						<img src={ food[i].omnivore[0].imgUrl } alt="Food" />
+							{ food[i].omnivore[0].name }
       				</a>
-      			</div>
       		)}});
 		return(
 			<div className="row">
@@ -60,7 +60,7 @@ class Omnivore extends Component {
 
 				
 				<div className="col-md-3">
-					<a href="">{ food }</a>
+						{ food }
 				</div>
 				<div className="col-md-3">
 					<a href="">{ food }</a>
