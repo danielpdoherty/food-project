@@ -1,0 +1,45 @@
+{
+	"food": {
+		"title": {
+	    "Burger": {
+	      "name": "burger",
+	      "imgUrl": "PLACEHOLDER",
+	      "groups": {
+	         "omnivore": true
+	     	}
+	      },
+	      "Pizza": {
+	      "name": "pizza",
+	      "imgUrl": "/img/pizza.png",
+	      "groups": {
+	         "omnivore": true,
+	         "vegetarian": true
+	     	}
+	      },
+	      "Taco": {
+	      "name": "taco",
+	      "imgUrl": "/img/taco.jpg",
+	      "groups": {
+	         "omnivore": true,
+	         "vegetarian": true
+	      }
+	    }
+	  },
+	  "groups": {
+	    "omnivore": {
+	      "members": {
+	        "Burger": true,
+	        "Pizza": true,
+	        "Taco": true
+	      	}
+	      },
+	    "vegetarian": {
+	      "members": {
+	        "Pizza": true,
+	        "Taco": true
+	      }  
+	    }
+		}
+	}
+}
+
