@@ -8,18 +8,18 @@ class Omnivore extends Component {
 		this.ref = firebase.database().ref();
 		this.state = {
 			id : Date.now(),
-			food : []
+			omnivore: []
 		}
 	}
 
 	  componentWillMount() {
-    database.ref('/food')
+    database.ref('/food/omnivore')
       .on('value', data => {
           const results = firebaseListToArray(data.val());
           console.log('food', results);
 
           this.setState({
-            food: results
+            omnivore: results
           });
         });
   }
@@ -41,17 +41,17 @@ class Omnivore extends Component {
 	// }
 
 	render(){
-		const food = this.state.food.map((food) => {
-			console.log('food map', food);
-      		// let foodLength = food.id;
-      		// if(foodLength.length < 9){
-      			for(var i = 0, x = food.length; i < x ; i++){
+		const omnivore = this.state.omnivore.map((omnivore) => {
+			console.log('food map', omnivore);
+      		// let omnivoreLength = omnivore.id;
+      		// if(omnivore.length < 3){
+      			// for(var i = 0, x = omnivore.length; i < x ; i++){
       		return (
-      				<a href="#" key={ this.state.id } name={ food.omnivore[0].name }>
-						<img src={ food[i].omnivore[0].imgUrl } alt="Food" />
-							{ food[i].omnivore[0].name }
+      				<a href="#" key={ this.id } name={ this.state.name }>
+						<img src={ omnivore.imgUrl } alt="Food" />
+							{ omnivore.name }
       				</a>
-      		)}});
+      		)});
 		return(
 			<div className="row">
 				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
@@ -60,28 +60,9 @@ class Omnivore extends Component {
 
 				
 				<div className="col-md-3">
-						{ food }
+						{ omnivore }
 				</div>
-				<div className="col-md-3">
-					<a href="">{ food }</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">{food }</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">{ food }</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">{ food }</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">{ food }</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">{ food }</a>
-				</div>
-			</div>
-
+			</div>	
 			);
 	}
 }
