@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import pizza from '../img/pizza.png';
-import tacos from '../img/tacos.jpg';
+import veggietacos from '../img/veggietacos.jpg';
 import friedrice from '../img/friedrice.jpg';
 import falafel from '../img/falafel.jpg';
 import brusselsprouts from '../img/brusselsprouts.jpg';
@@ -22,7 +22,7 @@ class Vegetarian extends Component {
 					<h3><a href="">Pizza</a></h3>
 				</div>
 				<div className="col-md-3">
-					<a href=""><img src={tacos} alt="Tacos"/></a>
+					<a href=""><img src={veggietacos} alt="Tacos"/></a>
 					<h3><a href="">Tacos</a></h3>
 				</div>
 				<div className="col-md-3">

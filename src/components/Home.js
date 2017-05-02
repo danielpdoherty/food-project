@@ -5,31 +5,6 @@ import vege from '../img/vege.jpg';
 import './typingAnim.css';
 
 class Home extends Component {
-	state = {
-
-    position: 'unknown'
-
-  };
-
-// Now, in componentDidMount, we can use navigator.geolocation.getCurrentPosition to get our position in terms of latitude and longitude, then set our state:
-
-  componentDidMount() {
-
-    navigator.geolocation.getCurrentPosition(
-
-      (position) => {
-
-        this.setState({position});
-
-      },
-
-      (error) => alert(error),
-
-      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
-
-    );
-
-  }
 
 	render(){
 		return(

@@ -7,13 +7,17 @@ import Home from './components/Home';
 import Omnivore from './components/Omnivore';
 import Vegetarian from './components/Vegetarian';
 import NotFound from './components/NotFound';
+import Search from './components/Search';
+
+
 
 ReactDOM.render(
   <Router history={ hashHistory }>
-  	<Route path="/" component={App}> 
+  	<Route path="/" component={App}>
   		<IndexRoute component={Home} />
   		<Route path="/omni" component={Omnivore} />
   		<Route path="/vege" component={Vegetarian} />
+      <Route path="/search" component={Search} />
   	</Route>
   	<Route path="*" component={NotFound} />
   </Router>,

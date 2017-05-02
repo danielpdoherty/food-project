@@ -76,3 +76,7 @@ footer{
 	margin-top: 50px;
 	color: #000000;
 }
+
+.list-group-item, .panel-body {
+	color: #000000;
+}
