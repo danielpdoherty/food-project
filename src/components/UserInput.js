@@ -5,6 +5,7 @@ class UserInput extends Component {
     super(props);
     this.state = {
       query : ''
+
     }
 		this.handleQuerysubmit = this.handleQuerysubmit.bind(this);
 		this.handleQueryChange = this.handleQueryChange.bind(this);

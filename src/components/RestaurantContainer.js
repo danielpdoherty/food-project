@@ -45,7 +45,7 @@ class RestaurantContainer extends Component {
 					});
 				}
 				this.setState({
-					restaurants :  results
+					restaurants :  results,
 				});
 			}.bind(this)).catch(function(error) {
 				console.log('request failed', error)
@@ -100,7 +100,7 @@ class RestaurantContainer extends Component {
 							<UserInput onQuerysubmit={this.updateQuery}/>
 						</div>
 					</div>
-					
+
 				</div>
 				<div className="col-sm-8 col-xs-12">
 					<h3>Suggested restaurants:</h3>

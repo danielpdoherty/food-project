@@ -19,6 +19,7 @@ ReactDOM.render(
   		<Route path="/omni" component={Omnivore} />
   		<Route path="/vege" component={Vegetarian} />
       <Route path="/search" component={Search} />
+      <Route path="/search/:id" component={Search} />
   		<Route path="/slots" component={Slots} />
   	</Route>
   	<Route path="*" component={NotFound} />
