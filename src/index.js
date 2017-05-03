@@ -9,6 +9,8 @@ import Vegetarian from './components/Vegetarian';
 import Slots from './components/Slots';
 import NotFound from './components/NotFound';
 import Search from './components/Search';
+import OmniChoose from './components/OmniChoose';
+import VegeChoose from './components/VegeChoose';
 
 
 
@@ -21,6 +23,8 @@ ReactDOM.render(
       <Route path="/search" component={Search} />
       <Route path="/search/:id" component={Search} />
   		<Route path="/slots" component={Slots} />
+      <Route path="/omcho" component={OmniChoose} />
+      <Route path="/vegcho" component={VegeChoose} />
   	</Route>
   	<Route path="*" component={NotFound} />
   </Router>,
