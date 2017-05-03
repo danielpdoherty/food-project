@@ -1,12 +1,4 @@
 import React, { Component } from 'react';
-import meatpizza from '../img/meatpizza.jpg';
-import tacos from '../img/tacos.jpg';
-import steak from '../img/steak.jpg';
-import burger from '../img/burger.jpg';
-import kungpaochicken from '../img/kungpaochicken.jpg';
-import pulledpork from '../img/pulledpork.jpg';
-import kebab from '../img/kebab.jpg';
-import chickenwings from '../img/chickenwings.jpg';
 import firebase, { database, firebaseListToArray } from '../firebase';
 
 
@@ -56,21 +48,22 @@ class Omnivore extends Component {
       		// if(omnivore.length < 3){
       			// for(var i = 0, x = omnivore.length; i < x ; i++){
       		return (
+      			<div className="col-md-3">
       				<a href="#" key={ this.id } name={ this.state.name }>
 						<img src={ omnivore.imgUrl } alt="Food" />
+						<br />
 							{ omnivore.name }
       				</a>
+      			</div>	
       		)});
 		return(
 			<div className="row">
 				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
 				<h2>Or, let us choose for you.</h2>
 				<h3>I&#8217;m hungry for...</h3>
-
 				
-				<div className="col-md-3">
-						{ omnivore }
-				</div>
+				{ omnivore }
+				
 			</div>	
 
 			);

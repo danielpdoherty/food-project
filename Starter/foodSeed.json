@@ -3,31 +3,86 @@
     "omnivore": [
       {
       	"name": "Burger",
-      	"imgUrl": "PLACEHOLDER",
+      	"imgUrl": "/img/burger.jpg",
       	"searchTerm": "burger"
       		},
           {    	
       	"name": "Pizza",
-      	"imgUrl": "/img/pizza.png",
+      	"imgUrl": "/img/meatpizza.jpg",
       	"searchTerm": "pizza"
       		},
           {    	
       	"name": "Tacos",
       	"imgUrl": "/img/tacos.jpg",
       	"searchTerm": "tacos"
-      		}
+      		},
+          {
+        "name": "Steak",
+        "imgUrl": "/img/steak.jpg",
+        "searchTerm": "steak"
+          },
+          {
+        "name": "Pulled Pork",
+        "imgUrl": "/img/pulledpork.jpg",
+        "searchTerm": "pulled-pork"
+          },
+          {
+        "name": "Chicken Wings",
+        "imgUrl": "/img/chickenwings.jpg",
+        "searchTerm": "wings"
+          },
+          {
+        "name": "Kung Pao Chicken",
+        "imgUrl": "/img/kungpaochicken.jpg",
+        "searchTerm": "chinese"
+          },
+          {
+        "name": "Kebab",
+        "imgUrl": "/img/kebab.jpg",
+        "searchTerm": "kebab"
+          }
   		],
   	"vegetarian": [
       {
   			"name": "Salad",
       		"imgUrl": "/img/salad.jpg",
       		"searchTerm": "salad"
-  			},
-        {
+  			   },
+          {
   			"name": "Falafel",
       		"imgUrl": "/img/falafel.jpg",
       		"searchTerm": "falafel"
-  			}
+  			   },
+          {
+          "name": "Brussels Sprouts",
+        "imgUrl": "/img/brusselsprouts.jpg",
+        "searchTerm": "southern"
+          },
+          {
+        "name": "Veggie Tacos",
+        "imgUrl": "/img/veggietacos.jpg",
+        "searchTerm": "veggie-tacos"
+          },
+          {
+        "name": "Hummus",
+        "imgUrl": "/img/hummus.jpg",
+        "searchTerm": "mediterranean"
+          },
+          {
+        "name": "Fried Rice",
+        "imgUrl": "/img/friedrice.jpg",
+        "searchTerm": "vegetarian-asian"
+          },
+          {
+        "name": "Pizza",
+        "imgUrl": "/img/pizza.png",
+        "searchTerm": "vegetarian-pizza"
+          },
+          {
+        "name": "Tofu",
+        "imgUrl": "/img/tofu.jpg",
+        "searchTerm": "tofu"
+          }
   		]
 	}
 
