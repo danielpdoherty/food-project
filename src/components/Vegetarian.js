@@ -9,6 +9,9 @@ import hummus from '../img/hummus.jpg';
 import tofu from '../img/tofu.jpg';
 
 class Vegetarian extends Component {
+
+
+
 	render(){
 		return(
 			<div className="row">

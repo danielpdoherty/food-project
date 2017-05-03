@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'elemental'
 
 // import {checkStatus, parseJSON} from '../utilities/index';
 
