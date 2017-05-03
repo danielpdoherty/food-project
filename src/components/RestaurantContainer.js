@@ -45,7 +45,7 @@ class RestaurantContainer extends Component {
 					});
 				}
 				this.setState({
-					restaurants :  results
+					restaurants :  results,
 				});
 			}.bind(this)).catch(function(error) {
 				console.log('request failed', error)

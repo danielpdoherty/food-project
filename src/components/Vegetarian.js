@@ -8,15 +8,19 @@ import brusselsprouts from '../img/brusselsprouts.jpg';
 import salad from '../img/salad.jpg';
 import hummus from '../img/hummus.jpg';
 import tofu from '../img/tofu.jpg';
+import { Link } from 'react-router';
 
 class Vegetarian extends Component {
+
+
 	constructor(props){
 		super(props);
 
 		this.ref = firebase.database().ref();
 		this.state = {
 			id : Date.now(),
-			vegetarian: []
+			vegetarian: [],
+
 		}
 	}
 
@@ -32,6 +36,7 @@ class Vegetarian extends Component {
         });
   }
 
+
 	render(){
 		const vegetarian = this.state.vegetarian.map((vegetarian) => {
 			console.log('food map', vegetarian);
@@ -40,12 +45,18 @@ class Vegetarian extends Component {
       			// for(var i = 0, x = vegetarian.length; i < x ; i++){
       		return (
       			<div className="col-md-3">
-      				<a href="#" key={ vegetarian.id } name={ this.state.name }>
-						<img src={ vegetarian.imgUrl } alt="Food" />
-						<br />
-							{ vegetarian.name }
-      				</a>
-      			</div>	
+
+						<Link
+                    to={"/search/"+vegetarian.searchTerm}
+
+                    key={ vegetarian.id }>
+
+									<img src={ vegetarian.imgUrl } alt="Food" />
+									<br />
+										{ vegetarian.name }
+                </Link>
+      				
+      			</div>
       		)});
 		return(
 			<div className="row">

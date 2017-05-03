@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import firebase, { database, firebaseListToArray } from '../firebase';
+import { Link } from 'react-router';
+
 
 
 class Omnivore extends Component {
@@ -49,11 +51,20 @@ class Omnivore extends Component {
       			// for(var i = 0, x = omnivore.length; i < x ; i++){
       		return (
       			<div className="col-md-3">
+<<<<<<< HEAD
       				<a href="#" key={ this.id } name={ this.state.name } >
 						<img src={ omnivore.imgUrl } alt="Food" />
 						<br />
 							{ omnivore.name }
       				</a>
+=======
+						<Link to={"/search/"+ omnivore.name} key={ this.id }>
+							<img src={ omnivore.imgUrl } alt="Food" />
+								<br />
+								<p>{ omnivore.name }</p>
+                </Link>
+      		
+>>>>>>> dev
       			</div>
       		)});
 		return(
