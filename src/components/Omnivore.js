@@ -42,27 +42,41 @@ class Omnivore extends Component {
 	// 		});
 	// 	});
 	// }
+	// buttonClick(){
+	// 	document.getElementById("choiceButton").addEventListener("click", chooseForMe);
 
+	// 		function chooseForMe() {
+	// 			let omnivoreChosen = function shuffleArray(omnivore) {
+ //    								for (var i = omnivore.length - 1; i > 0; i--) {
+ //        							var j = Math.floor(Math.random() * (i + 1));
+	// 								        							var temp = omnivore[i];
+	// 								        omnivore[i] = omnivore[j];
+	// 								        omnivore[j] = temp;
+	// 								    }
+	// 								    return omnivore;
+	// 								}
+ //    			document.getElementById("choices").innerHTML = omnivoreChosen;
+	// 		}
+	// 	}
+	
 	render(){
 		const omnivore = this.state.omnivore.map((omnivore) => {
 			console.log('food map', omnivore);
-      		// let omnivoreLength = omnivore.id;
-      		// if(omnivore.length < 3){
-      			// for(var i = 0, x = omnivore.length; i < x ; i++){
+			
       		return (
-      			<div className="col-md-3">
-						<Link to={"/search/"+ omnivore.name} key={ this.id }>
-							<img src={ omnivore.imgUrl } alt="Food" />
-								<br />
-								<p>{ omnivore.name }</p>
-                </Link>
+      			<div className="col-md-3" id="choices">
+					<Link to={"/search/"+ omnivore.name} key={ this.id }>
+						<img src={ omnivore.imgUrl } alt="Food" />
+						<br />
+						<p>{ omnivore.name }</p>
+                	</Link>
       		
       			</div>
       		)});
 		return(
 			<div className="row">
 				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
-				<h2>Or, let us choose for you.</h2>
+				 <Link to="/omcho"><button id="choiceButton">Let us choose for you.</button></Link>
 				<h3>I&#8217;m hungry for...</h3>
 
 				{ omnivore }
