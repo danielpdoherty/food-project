@@ -82,11 +82,9 @@ footer{
 	color: #000000;
 }
 
-.jSlots-wrapper {  
-    overflow: hidden; /* to hide the magic */  
-    height: 40px; /* whatever the height of your list items are */  
-    display: inline-block; /* to size width correctly, can use float too, or width*/  
-    border: 1px solid #999;  
-}  
-
-
+.jSlots-wrapper {
+    overflow: hidden; /* to hide the magic */
+    height: 40px; /* whatever the height of your list items are */
+    display: inline-block; /* to size width correctly, can use float too, or width*/
+    border: 1px solid #999;
+}

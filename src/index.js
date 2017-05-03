@@ -16,10 +16,10 @@ ReactDOM.render(
   <Router history={ hashHistory }>
   	<Route path="/" component={App}>
   		<IndexRoute component={Home} />
-  		<Route path="/omni" component={Omnivore} />
-  		<Route path="/vege" component={Vegetarian} />
-      <Route path="/search" component={Search} />
-  		<Route path="/slots" component={Slots} />
+  		<Route path="omni" component={Omnivore} />
+  		<Route path="vege" component={Vegetarian} />
+      <Route path="search" component={Search} />
+  		<Route path="slots" component={Slots} />
   	</Route>
   	<Route path="*" component={NotFound} />
   </Router>,

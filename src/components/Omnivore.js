@@ -31,14 +31,14 @@ class Omnivore extends Component {
 	// 	var rand = Math.floor(Math.random() * snapshot.numChildren());
 	// 	snapshot.forEach(function(snapshot) {
  //  		if (i === rand) {
- //   		 // picked random item, 
+ //   		 // picked random item,
  //   		 console.log(food);
  //   		let snapFood =  snapshot.val()
  //   		console.log('snapfood ', snapFood);
  //  		}
  //  		i++;
 	// 		});
-	// 	}); 
+	// 	});
 	// }
 
 	render(){
@@ -49,22 +49,22 @@ class Omnivore extends Component {
       			// for(var i = 0, x = omnivore.length; i < x ; i++){
       		return (
       			<div className="col-md-3">
-      				<a href="#" key={ this.id } name={ this.state.name }>
+      				<a href="#" key={ this.id } name={ this.state.name } >
 						<img src={ omnivore.imgUrl } alt="Food" />
 						<br />
 							{ omnivore.name }
       				</a>
-      			</div>	
+      			</div>
       		)});
 		return(
 			<div className="row">
 				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
 				<h2>Or, let us choose for you.</h2>
 				<h3>I&#8217;m hungry for...</h3>
-				
+
 				{ omnivore }
-				
-			</div>	
+
+			</div>
 
 			);
 	}
