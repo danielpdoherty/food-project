@@ -34,7 +34,7 @@ class Vegetarian extends Component {
 			console.log('food map', vegetarian);
 
       		return (
-      			<div className="col-md-3">
+      			<div className="col-md-3" id="choices">
 
 						<Link
                     to={"/search/"+vegetarian.searchTerm}
@@ -44,7 +44,7 @@ class Vegetarian extends Component {
 									<img src={ vegetarian.imgUrl } alt="Food" />
 									<br />
 										{ vegetarian.name }
-                </Link>
+            </Link>
 
       			</div>
       		)});

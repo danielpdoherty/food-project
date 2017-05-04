@@ -13,7 +13,7 @@ class VegeChooseSwitch extends Component{
 		}
 	}
 
-	
+
 
  	componentDidMount(){
  		database.ref('/food/vegetarian')
@@ -26,7 +26,7 @@ class VegeChooseSwitch extends Component{
  				console.log(this.state.meal);
  			})
  			});
- 	}	
+ 	}
 
 
 	render(){
@@ -37,7 +37,7 @@ class VegeChooseSwitch extends Component{
 				<button id="choiceButton">Let us choose for you.</button>
 				</Link>
 				<br/>
-				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id }>
+				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="choices">
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you're eating:</h1>
 					<p>{this.state.meal.name}</p>
