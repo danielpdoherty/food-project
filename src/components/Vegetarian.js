@@ -32,9 +32,7 @@ class Vegetarian extends Component {
 	render(){
 		const vegetarian = this.state.vegetarian.map((vegetarian) => {
 			console.log('food map', vegetarian);
-      		// let omnivoreLength = vegetarian.id;
-      		// if(vegetarian.length < 3){
-      			// for(var i = 0, x = vegetarian.length; i < x ; i++){
+
       		return (
       			<div className="col-md-3">
 
