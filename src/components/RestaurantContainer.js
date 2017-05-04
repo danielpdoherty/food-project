@@ -100,15 +100,14 @@ class RestaurantContainer extends Component {
 							<UserInput onQuerysubmit={this.updateQuery}/>
 						</div>
 					</div>
-
 				</div>
 				<div className="col-sm-8 col-xs-12">
 					<h3>Suggested restaurants:</h3>
 					<div className="row sort">
 						<div className="col-xs-12">
-						Sort by:
+						<h3>Sort by:</h3>
 						<div className="btn-group " role="group" aria-label="...">
-							<button onClick={this.toggleSortRatings} className={this.state.sort === 'ratings' ? 'active btn btn-link' : 'btn btn-link'} type="button" >Ratings</button>
+							<button onClick={this.toggleSortRatings} className={this.state.sort === 'ratings' ? 'active btn btn-link' : 'btn btn-link' } type="button">Ratings</button>
 							<button onClick={this.toggleSortDistance} className={this.state.sort === 'distance' ? 'active btn btn-link' : 'btn btn-link'} type="button" >Distance</button>
 						</div>
 						</div>

@@ -12,6 +12,11 @@ body{
 
 h2, h3 {
 	color: #ffac41;
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 25px;;
 }
 
 a{
@@ -28,6 +33,46 @@ img{
 	border: solid 5px #886d42;
 	border-radius: 100%;
 }
+
+img:hover{
+	height: 250px;
+	width: 250px;
+	border: solid 10px #886d42;
+	border-radius: 100%;
+}
+
+.active.btn.btn-link {
+ background-color: #ffac41;
+ border: none;
+ color: white;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ border-radius: 12px !important;
+}
+
+.btn.btn-link {
+	background-color: #17bebb;
+ border: none;
+ color: white;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ border-radius: 12px !important;
+}
+
+.list-group{
+	border: 2px solid #ffac41;
+}
+
+.border{
+	border: black 1px dashed;
+}
+
 
 .navbar-default {
 	border-color: #f2b500;

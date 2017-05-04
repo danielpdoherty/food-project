@@ -27,22 +27,6 @@ class Omnivore extends Component {
         });
   }
 
-	// getRandomFood(food){
-	// 	this.ref.on('value', function(snapshot){
-	// 	var i = 0;
-	// 	var rand = Math.floor(Math.random() * snapshot.numChildren());
-	// 	snapshot.forEach(function(snapshot) {
- //  		if (i === rand) {
- //   		 // picked random item,
- //   		 console.log(food);
- //   		let snapFood =  snapshot.val()
- //   		console.log('snapfood ', snapFood);
- //  		}
- //  		i++;
-	// 		});
-	// 	});
-	// }
-
 	render(){
 		const omnivore = this.state.omnivore.map((omnivore) => {
 			console.log('food map', omnivore);
@@ -50,21 +34,12 @@ class Omnivore extends Component {
       		// if(omnivore.length < 3){
       			// for(var i = 0, x = omnivore.length; i < x ; i++){
       		return (
-      			<div className="col-md-3">
-<<<<<<< HEAD
-      				<a href="#" key={ this.id } name={ this.state.name } >
-						<img src={ omnivore.imgUrl } alt="Food" />
-						<br />
-							{ omnivore.name }
-      				</a>
-=======
+      			<div className="col-md-3" ref="dish">
 						<Link to={"/search/"+ omnivore.name} key={ this.id }>
 							<img src={ omnivore.imgUrl } alt="Food" />
 								<br />
 								<p>{ omnivore.name }</p>
                 </Link>
-      		
->>>>>>> dev
       			</div>
       		)});
 		return(
