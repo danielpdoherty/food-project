@@ -14,7 +14,7 @@ class OmniChooseSwitch extends Component{
 		}
 	}
 
-	
+
 
  	componentDidMount(){
  		database.ref('/food/omnivore')
@@ -27,7 +27,7 @@ class OmniChooseSwitch extends Component{
  				console.log(this.state.meal);
  			})
  			});
- 	}	
+ 	}
 
 
 	render(){
@@ -38,7 +38,7 @@ class OmniChooseSwitch extends Component{
 				<button id="choiceButton">Let us choose for you.</button>
 				</Link>
 				<br/>
-				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id }>
+				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="choices">
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you're eating:</h1>
 					<p>{this.state.meal.name}</p>

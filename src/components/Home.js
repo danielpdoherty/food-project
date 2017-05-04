@@ -21,10 +21,10 @@ class Home extends Component {
 					</h3>
 				</div>
 				<div className="row">
-					<div className="col-md-6 choiceBox">
+					<div className="col-md-6 choiceBox" id="choices">
 						<Link to="/omni"><img src={omni} alt="Omnivore"/>Omnivore!</Link>
 					</div>
-					<div className="col-md-6 choiceBox">
+					<div className="col-md-6 choiceBox" id="choices">
 						<Link to="/vege"><img src={vege} alt="Vegetarian"/>Vegetarian!</Link>
 					</div>
 				</div>
