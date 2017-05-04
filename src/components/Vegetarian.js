@@ -45,7 +45,7 @@ class Vegetarian extends Component {
 									<br />
 										{ vegetarian.name }
                 </Link>
-      				
+
       			</div>
       		)});
 		return(
