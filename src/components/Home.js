@@ -5,16 +5,17 @@ import vege from '../img/vege.jpg';
 import './typingAnim.css';
 
 class Home extends Component {
+
 	render(){
 		return(
 			<div>
 				<div className="row">
-					<h1>Feeling Hungry and can't decide?</h1>
+					<h1 className="animate">Feeling Hungry and can&#8217;t decide?</h1>
 					<h2>I hate that!
 					<br />
-						Let's help you find some grub!
+						Let&#8217;s help you find some grub!
 					</h2>
-					<h3>Let's start with some basic info...
+					<h3>Let&#8217;s start with some basic info...
 					<br />
 						You are a ...
 					</h3>

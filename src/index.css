@@ -1,17 +1,23 @@
 body{
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	background-color: #D72638;
+	background-color: #f3f4e6;
 	color: #ffffff;
+	background-image: url(./img/Linen-Background.jpg);
 }
 
-div{
+/*div{
 	margin-top: 50px;
+}*/
+
+h2, h3 {
+	color: #ffac41;
 }
-
-
 
 a{
-	color: #FBD8C5;
+	font-family: 'Montserrat', sans-serif;
+	/*color: #FBD8C5;*/
+	color: #886d42;
 	text-decoration: none;
 	font-size: 30px;
 }
@@ -19,32 +25,67 @@ a{
 img{
 	height: 150px;
 	width: 150px;
-	border: solid 5px white;
+	border: solid 5px #886d42;
 	border-radius: 100%;
 }
+
+.navbar-default {
+	border-color: #f2b500;
+}
+
 
 ul {
  list-style: none;
 }
 
 
-.header{	
-	background: red;
+.header{
+	/*background: #7ab4a6;*/
+  background: #f1dbbd;
 }
 
-.appName{
+h1.appName{
+	font-family: 'Croissant One', cursive;
 	float: left;
-	font-size: 30px;
+	font-size: 50px;
+  color: #886d42;
 }
 
 .headerLinks{
 	float: right;
+	font-family: 'Lemon', cursive;
 }
 
-.active{
+ul.headerLinks li {
+	display: inline-block;
+  margin-right: 50px;
+}
+
+ul.headerLinks a:hover, a:default, a:active, a:link {
+	text-decoration: none;
+}
+
+.active, ul.headerLinks a:focus {
 	color: black;
+	text-decoration: none;
+	font-family: 'Croissant One',fantasy;
+	font-weight: bold;
 }
 
 footer{
 	margin-top: 50px;
+	color: #000000;
 }
+
+
+.list-group-item, .panel-body {
+	color: #000000;
+}
+
+.jSlots-wrapper {  
+    overflow: hidden; /* to hide the magic */  
+    height: 40px; /* whatever the height of your list items are */  
+    display: inline-block; /* to size width correctly, can use float too, or width*/  
+    border: 1px solid #999;  
+}  
+

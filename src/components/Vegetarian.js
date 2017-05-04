@@ -1,37 +1,65 @@
 import React, { Component } from 'react';
+import firebase, { database, firebaseListToArray } from '../firebase';
+import { Link } from 'react-router';
 
 class Vegetarian extends Component {
+
+
+	constructor(props){
+		super(props);
+
+		this.ref = firebase.database().ref();
+		this.state = {
+			id : Date.now(),
+			vegetarian: [],
+
+		}
+	}
+
+	  componentWillMount() {
+    database.ref('/food/vegetarian')
+      .on('value', data => {
+          const results = firebaseListToArray(data.val());
+          console.log('food', results);
+
+          this.setState({
+            vegetarian: results
+          });
+        });
+  }
+
+
 	render(){
+		const vegetarian = this.state.vegetarian.map((vegetarian) => {
+			console.log('food map', vegetarian);
+      		// let omnivoreLength = vegetarian.id;
+      		// if(vegetarian.length < 3){
+      			// for(var i = 0, x = vegetarian.length; i < x ; i++){
+      		return (
+      			<div className="col-md-3">
+
+						<Link
+                    to={"/search/"+vegetarian.searchTerm}
+
+                    key={ vegetarian.id }>
+
+									<img src={ vegetarian.imgUrl } alt="Food" />
+									<br />
+										{ vegetarian.name }
+                </Link>
+      				
+      			</div>
+      		)});
 		return(
 			<div className="row">
-				<h1>Ah someone who enjoys a good vegetable or two. What looks good to you here?</h1>
-				<h2>Or, let us choose for you.</h2>
-				<h3>I'm thinking...</h3>
 
-				<div className="col-md-3">
-					<a href="">Pizza</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Tacos</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Fried Rice</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Falafel</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Brussels Sprouts</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Salad</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Hummus</a>
-				</div>
-				<div className="col-md-3">
-					<a href="">Fake Meat</a>
-				</div>
+				<h1 className="animate">Ah someone who enjoys a good vegetable or two.</h1>
+				<h1 className="animate"> What looks good to you here?</h1>
+				<Link to="/vegecho"><button id="choiceButton">Let us choose for you.</button></Link>
+				<h3>I&#8217;m thinking...</h3>
+
+				{ vegetarian }
+
 			</div>
 
 			);

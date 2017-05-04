@@ -1,11 +1,12 @@
-h1{
+h1.animate{
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
   animation: type 4s steps(80, end);
+  color: #7ab4a6;
 }
 
-h1:nth-child(2){
+h1.animate:nth-child(2){
   animation: type2 8s steps(80, end);
 }
 
@@ -14,15 +15,15 @@ span{
   animation: blink 1s infinite;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-} 
+@keyframes type{
+  from { width: 0; }
+}
 
 @keyframes type2{
   0%{width: 0;}
   50%{width: 0;}
-  100%{ width: 100; } 
-} 
+  100%{ width: 100; }
+}
 
 @keyframes blink{
   to{opacity: .0;}
