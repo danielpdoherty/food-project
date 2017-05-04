@@ -11,6 +11,8 @@ import NotFound from './components/NotFound';
 import Search from './components/Search';
 import OmniChoose from './components/OmniChoose';
 import VegeChoose from './components/VegeChoose';
+import OmniChooseSwitch from './components/OmniChooseSwitch';
+import VegeChooseSwitch from './components/VegeChooseSwitch';
 
 
 
@@ -24,7 +26,9 @@ ReactDOM.render(
       <Route path="/search/:id" component={Search} />
   		<Route path="/slots" component={Slots} />
       <Route path="/omcho" component={OmniChoose} />
-      <Route path="/vegcho" component={VegeChoose} />
+      <Route path="/omchos" component={OmniChooseSwitch} />
+      <Route path="/vegecho" component={VegeChoose} />
+      <Route path="/vegechos" component={VegeChooseSwitch} />
   	</Route>
   	<Route path="*" component={NotFound} />
   </Router>,
