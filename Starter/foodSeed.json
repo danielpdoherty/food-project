@@ -24,7 +24,7 @@
           {
         "name": "Pulled Pork",
         "imgUrl": "/img/pulledpork.jpg",
-        "searchTerm": "pulled-pork"
+        "searchTerm": "bbq"
           },
           {
         "name": "Chicken Wings",
@@ -56,12 +56,12 @@
           {
           "name": "Brussels Sprouts",
         "imgUrl": "/img/brusselsprouts.jpg",
-        "searchTerm": "southern"
+        "searchTerm": "southern food"
           },
           {
         "name": "Veggie Tacos",
         "imgUrl": "/img/veggietacos.jpg",
-        "searchTerm": "veggie-tacos"
+        "searchTerm": "tacos"
           },
           {
         "name": "Hummus",
@@ -71,17 +71,17 @@
           {
         "name": "Fried Rice",
         "imgUrl": "/img/friedrice.jpg",
-        "searchTerm": "vegetarian-asian"
+        "searchTerm": "asian"
           },
           {
         "name": "Pizza",
         "imgUrl": "/img/pizza.png",
-        "searchTerm": "vegetarian-pizza"
+        "searchTerm": "pizza"
           },
           {
         "name": "Tofu",
         "imgUrl": "/img/tofu.jpg",
-        "searchTerm": "tofu"
+        "searchTerm": "vegetarian"
           }
   		]
 	}

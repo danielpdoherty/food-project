@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
 import firebase, { database, firebaseListToArray } from '../firebase';
-import pizza from '../img/pizza.png';
-import veggietacos from '../img/veggietacos.jpg';
-import friedrice from '../img/friedrice.jpg';
-import falafel from '../img/falafel.jpg';
-import brusselsprouts from '../img/brusselsprouts.jpg';
-import salad from '../img/salad.jpg';
-import hummus from '../img/hummus.jpg';
-import tofu from '../img/tofu.jpg';
 import { Link } from 'react-router';
 
 class Vegetarian extends Component {
@@ -40,9 +32,7 @@ class Vegetarian extends Component {
 	render(){
 		const vegetarian = this.state.vegetarian.map((vegetarian) => {
 			console.log('food map', vegetarian);
-      		// let omnivoreLength = vegetarian.id;
-      		// if(vegetarian.length < 3){
-      			// for(var i = 0, x = vegetarian.length; i < x ; i++){
+
       		return (
       			<div className="col-md-3">
 
@@ -63,7 +53,7 @@ class Vegetarian extends Component {
 
 				<h1 className="animate">Ah someone who enjoys a good vegetable or two.</h1>
 				<h1 className="animate"> What looks good to you here?</h1>
-				<h2>Or, let us choose for you.</h2>
+				<Link to="/vegecho"><button id="choiceButton">Let us choose for you.</button></Link>
 				<h3>I&#8217;m thinking...</h3>
 
 				{ vegetarian }

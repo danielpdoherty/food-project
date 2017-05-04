@@ -22,30 +22,29 @@ class Omnivore extends Component {
           console.log('food', results);
 
           this.setState({
-            omnivore: results
-          });
+            omnivore: results          
+        	});
         });
   }
 
 	render(){
 		const omnivore = this.state.omnivore.map((omnivore) => {
 			console.log('food map', omnivore);
-      		// let omnivoreLength = omnivore.id;
-      		// if(omnivore.length < 3){
-      			// for(var i = 0, x = omnivore.length; i < x ; i++){
+			
       		return (
-      			<div className="col-md-3" ref="dish">
-						<Link to={"/search/"+ omnivore.name} key={ this.id }>
-							<img src={ omnivore.imgUrl } alt="Food" />
-								<br />
-								<p>{ omnivore.name }</p>
-                </Link>
+
+      			<div className="col-md-3" id="choices">
+					<Link to={"/search/"+ omnivore.searchTerm} key={ this.id }>
+						<img src={ omnivore.imgUrl } alt="Food" />
+						<br />
+						<p>{ omnivore.name }</p>
+                	</Link>
       			</div>
       		)});
 		return(
 			<div className="row">
 				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
-				<h2>Or, let us choose for you.</h2>
+				 <Link to="/omcho"><button id="choiceButton">Let us choose for you.</button></Link>
 				<h3>I&#8217;m hungry for...</h3>
 
 				{ omnivore }
