@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import firebase, { database, firebaseListToArray } from '../firebase';
 import { Link } from 'react-router';
 
-
-class OmniChoose extends Component{
-	constructor(props){
+class VegeChooseSwitch extends Component{
+		constructor(props){
 		super(props);
 
 		this.ref = firebase.database().ref();
@@ -17,7 +16,7 @@ class OmniChoose extends Component{
 	
 
  	componentDidMount(){
- 		database.ref('/food/omnivore')
+ 		database.ref('/food/vegetarian')
  		.on('value', snapshot=>{
  			const snap = firebaseListToArray(snapshot.val());
  			console.log('should be array ', snap)
@@ -34,10 +33,10 @@ class OmniChoose extends Component{
 
 		return(
 			<div>
-				<Link to="/omchos">
+				<Link to="/vegecho">
 				<button id="choiceButton">Let us choose for you.</button>
-				<br/>
 				</Link>
+				<br/>
 				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id }>
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you're eating:</h1>
@@ -48,4 +47,4 @@ class OmniChoose extends Component{
 	}
 
 }
-export default OmniChoose;
+export default VegeChooseSwitch;

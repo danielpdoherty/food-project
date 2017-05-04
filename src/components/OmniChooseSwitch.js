@@ -3,7 +3,7 @@ import firebase, { database, firebaseListToArray } from '../firebase';
 import { Link } from 'react-router';
 
 
-class OmniChoose extends Component{
+class OmniChooseSwitch extends Component{
 	constructor(props){
 		super(props);
 
@@ -34,10 +34,10 @@ class OmniChoose extends Component{
 
 		return(
 			<div>
-				<Link to="/omchos">
+				<Link to="/omcho">
 				<button id="choiceButton">Let us choose for you.</button>
-				<br/>
 				</Link>
+				<br/>
 				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id }>
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you're eating:</h1>
@@ -48,4 +48,4 @@ class OmniChoose extends Component{
 	}
 
 }
-export default OmniChoose;
+export default OmniChooseSwitch;

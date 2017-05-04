@@ -22,8 +22,8 @@ class Omnivore extends Component {
           console.log('food', results);
 
           this.setState({
-            omnivore: results
-          });
+            omnivore: results          
+        	});
         });
   }
 
@@ -65,7 +65,7 @@ class Omnivore extends Component {
 			
       		return (
       			<div className="col-md-3" id="choices">
-					<Link to={"/search/"+ omnivore.name} key={ this.id }>
+					<Link to={"/search/"+ omnivore.searchTerm} key={ this.id }>
 						<img src={ omnivore.imgUrl } alt="Food" />
 						<br />
 						<p>{ omnivore.name }</p>
