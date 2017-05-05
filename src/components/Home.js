@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import omni from '../img/omni.png';
 import vege from '../img/vege.jpg';
-import './typingAnim.css';
+// import './typingAnim.css';
 
 class Home extends Component {
 
@@ -10,7 +10,7 @@ class Home extends Component {
 		return(
 			<div>
 				<div className="row">
-					<h1 className="animate">Feeling Hungry and can&#8217;t decide?</h1>
+					<h1>Feeling Hungry and can&#8217;t decide?</h1>
 					<h2>I hate that!
 					<br />
 						Let&#8217;s help you find some grub!

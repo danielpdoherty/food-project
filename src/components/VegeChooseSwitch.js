@@ -34,9 +34,9 @@ class VegeChooseSwitch extends Component{
 		return(
 			<div>
 				<Link to="/vegecho">
-				<button id="choiceButton">Let us choose for you.</button>
+				<button id="choiceButton" className="w3-btn w3-white w3-border w3-border-red w3-round-large">Let us choose for you.</button>
 				</Link>
-				<br/><br/>
+				<br/>
 				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="randomchoices">
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you're eating:</h1>
