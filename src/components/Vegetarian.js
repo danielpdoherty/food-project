@@ -53,7 +53,7 @@ class Vegetarian extends Component {
 
 				<h1 className="animate">Ah someone who enjoys a good vegetable or two.</h1>
 				<h1 className="animate"> What looks good to you here?</h1>
-				<Link to="/vegecho"><button id="choiceButton">Let us choose for you.</button></Link>
+				<Link to="/vegecho"><button id="choiceButton" className="w3-btn w3-white w3-border w3-border-red w3-round-large">Let us choose for you.</button></Link>
 				<h3>I&#8217;m thinking...</h3>
 
 				{ vegetarian }
