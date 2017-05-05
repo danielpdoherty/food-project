@@ -43,7 +43,7 @@ class Omnivore extends Component {
       		)});
 		return(
 			<div className="row">
-				<h1 className="animate">So you eat it all huh? What looks good here?</h1>
+				<h1>Anything catching your eye?</h1>
 				 <Link to="/omcho"><button id="choiceButton" className="w3-btn w3-white w3-border w3-border-red w3-round-large">Let us choose for you.</button></Link>
 				<h3>I&#8217;m hungry for...</h3>
 
