@@ -35,10 +35,10 @@ class OmniChoose extends Component{
 		return(
 			<div>
 				<Link to="/omchos">
-				<button className="extraButton">Let's try one more time!!'</button>
-				<br/>
+
+				<button id="choiceButton" className="w3-btn w3-white w3-border w3-border-red w3-round-large">Let us choose for you.</button>
 				</Link>
-				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="choices">
+				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="randomchoices">
 					<img src={ this.state.meal.imgUrl } alt={this.state.meal.name} />
 					<h1> WHOOP Oh yeah... looks like you&#8217;re eating:</h1>
 					<p>{this.state.meal.name}</p>
