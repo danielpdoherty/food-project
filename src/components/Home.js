@@ -11,7 +11,7 @@ class Home extends Component {
 			<div>
 				<div className="row">
 					<h1 className="animate">Feeling Hungry and can&#8217;t decide?</h1>
-					<h2>I hate that!
+					<h2>I <em>hate</em> that!
 					<br />
 						Let&#8217;s help you find some grub!
 					</h2>
@@ -22,10 +22,18 @@ class Home extends Component {
 				</div>
 				<div className="row">
 					<div className="col-md-6 choiceBox" id="choices">
-						<Link to="/omni"><img src={omni} alt="Omnivore"/>Omnivore!</Link>
+						<Link to="/omni">
+						<img src={omni} alt="Omnivore"/>
+						<br/>
+						Omnivore!
+						</Link>
 					</div>
 					<div className="col-md-6 choiceBox" id="choices">
-						<Link to="/vege"><img src={vege} alt="Vegetarian"/>Vegetarian!</Link>
+						<Link to="/vege">
+						<img src={vege} alt="Vegetarian"/>
+						<br/>
+						Vegetarian!
+						</Link>
 					</div>
 				</div>
 			</div>

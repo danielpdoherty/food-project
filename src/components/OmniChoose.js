@@ -35,7 +35,7 @@ class OmniChoose extends Component{
 		return(
 			<div>
 				<Link to="/omchos">
-				<button id="choiceButton">Let us choose for you.</button>
+				<button className="extraButton">Let's try one more time!!'</button>
 				<br/>
 				</Link>
 				<Link to={"/search/"+ this.state.meal.searchTerm} key={ this.id } id="choices">
