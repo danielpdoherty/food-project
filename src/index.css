@@ -27,19 +27,37 @@ a{
 	font-size: 30px;
 }
 
-#choices img {
-	height: 150px;
-	width: 150px;
-	border: solid 5px #886d42;
-	border-radius: 100%;
+.slick-track img {
+
+	height: 470px;
+	width: 30px;
+	border: none;
+	padding: 10px 120px;
+
+
 }
 
-#choices img:hover{
+.slick-dots {
+  bottom: 175px;
+	margin-bottom: -190px;
+}
+
+#text {
+	margin-top: -30px;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 30%;
+    min-height: 1px;
+}
+/*#choices img:hover{
 	height: 250px;
 	width: 250px;
 	border: solid 10px #886d42;
 	border-radius: 100%;
-}
+}*/
 
 #randomchoices img {
 	height: 250px;
@@ -128,7 +146,7 @@ ul.headerLinks a:hover, a:default, a:active, a:link {
 	float: right;
 	color: #000000;
 }
- 
+
 .venueList {
 	text-align: left;
 }
