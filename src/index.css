@@ -171,3 +171,33 @@ footer{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 }
+
+.mealChoice{
+	font-size: 50px;
+	font-style: italic;
+}
+
+.slick-track img {
+    height: 470px;
+    width: 30px;
+    border: none;
+    padding: 10px 120px;
+}
+
+.slick-dots {
+ bottom: 175px;
+    margin-bottom: -190px;
+}
+
+.slick-slide {
+   /*display: none;*/
+   float: left;
+   height: 30%;
+   min-height: 1px;
+}
+
+#homeOmni img, #vegeOmni img{
+	height: 500px;
+	width: 500px;
+	border-radius: 100%
+}
