@@ -17,7 +17,7 @@ class Gmap extends Component {
   componentDidMount(){
     console.log('componentDidMount:');
 
-    const url = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=30.273428%2C%20-97.739529&query=cheese&limit=10&intent=checkin&client_id=D4QBKSVYZWO5WQ2CKLQZ4BM4UXGEOBEQL0A4IPTVWHB11M5P&client_secret=5FCD2FPAH3XBAIQALGZXDQCQOETKZLEO4ACEYBOLMIBGENUA'
+    const url = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=30.273428%2C%20-97.739529&query=burgers&limit=10&intent=checkin&client_id=D4QBKSVYZWO5WQ2CKLQZ4BM4UXGEOBEQL0A4IPTVWHB11M5P&client_secret=5FCD2FPAH3XBAIQALGZXDQCQOETKZLEO4ACEYBOLMIBGENUA'
     superagent
     .get(url)
     .query(null)
@@ -40,7 +40,7 @@ class Gmap extends Component {
           <div className="map">
              <UserInput />
             <Map
-              zoom={13}
+              zoom={14}
               center={{ lat: 30.268723, lng: -97.7456727 }}
                 containerElement={
                   <div style={{ height: `100%` }} />
