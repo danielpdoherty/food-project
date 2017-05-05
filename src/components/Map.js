@@ -32,6 +32,7 @@ class Map extends Component {
     console.log('markers: ', markers);
 
     return (
+      
         <GoogleMap
           ref={this.mapLoaded.bind(this)}
           onDragEnd={this.mapMoved.bind(this)}

@@ -34,22 +34,23 @@ class Gmap extends Component {
 
   render() {
     return (
-        <div className="map">
-
-          <Map
-            zoom={13}
-            center={{ lat: 30.268723, lng: -97.7456727 }}
-              containerElement={
-                <div style={{ height: `100%` }} />
-              }
-              mapElement={
-                <div style={{ height: `100%` }} />
-              }
-              markers={this.state.venues}
-            />
-
+        <div>
+          <div className="map">
+            <Map
+              zoom={13}
+              center={{ lat: 30.268723, lng: -97.7456727 }}
+                containerElement={
+                  <div style={{ height: `100%` }} />
+                }
+                mapElement={
+                  <div style={{ height: `100%` }} />
+                }
+                markers={this.state.venues}
+              />
+          </div>
+          <div className="venues">
             <Places venues={this.state.venues}/>
-
+          </div>
         </div>
     );
   }
