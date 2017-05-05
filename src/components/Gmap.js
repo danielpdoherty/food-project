@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Map }  from './';
 import Places from './Places';
+import UserInput from './UserInput';
 import superagent from 'superagent';
 import '../index.css';
 
@@ -34,8 +35,10 @@ class Gmap extends Component {
 
   render() {
     return (
+
         <div>
           <div className="map">
+             <UserInput />
             <Map
               zoom={13}
               center={{ lat: 30.268723, lng: -97.7456727 }}

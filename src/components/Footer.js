@@ -4,7 +4,8 @@ class Footer extends Component{
 	render(){
 		return(
 			<footer>
-				<p> This is a placeholder for the footer </p>
+				<img src="#" alt="DineTuning" className="footerImage"/>
+				<p></p>
 			</footer>
 			);
 	}
