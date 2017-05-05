@@ -6,7 +6,6 @@ import RestaurantList from './components/RestaurantList.js';
 import _ from 'lodash';
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
 
 
 // AIzaSyDoQMExpBJGbyzOSCBLu2RncN5_BN3LhGw
@@ -93,7 +92,6 @@ class App extends Component {
         <div className="container">
             {this.props.children}
         </div>
-        <Footer />
       </section>
 
     );

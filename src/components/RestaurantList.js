@@ -18,12 +18,11 @@ class RestaurantList extends Component {
 								<p className="list-group-item-text">
 								{restaurant.Address} {restaurant.City} {restaurant.State}
 								</p>
-									<b>Distance:</b> {restaurant.Distance} <br/>
-									<b>Ratings:</b> {restaurant.Rating.AverageRating !== 'NaN' ? restaurant.Rating.AverageRating : '0'} <br/>
-									<b>Review:</b> {restaurant.Rating.LastReviewIntro !== 'NaN' ? restaurant.Rating.LastReviewIntro : 'None'}
+								<b>DISTANCE:</b> {restaurant.Distance} <br/>
+								<b>RATINGS:</b> {restaurant.Rating.AverageRating !== 'NaN' ? restaurant.Rating.AverageRating : '0'} <br/>
+                <b>REVIEW</b> <br/>{restaurant.Rating.LastReviewIntro !== 'NaN' ? restaurant.Rating.LastReviewIntro : 'None'}
 							</li>
 						)
-
 					})}
 				</ul>
 			</div>

@@ -32,11 +32,9 @@ class Vegetarian extends Component {
 	render(){
 		const vegetarian = this.state.vegetarian.map((vegetarian) => {
 			console.log('food map', vegetarian);
-      		// let omnivoreLength = vegetarian.id;
-      		// if(vegetarian.length < 3){
-      			// for(var i = 0, x = vegetarian.length; i < x ; i++){
+
       		return (
-      			<div className="col-md-3">
+      			<div className="col-md-3" id="choices">
 
 						<Link
                     to={"/search/"+vegetarian.searchTerm}
@@ -46,16 +44,14 @@ class Vegetarian extends Component {
 									<img src={ vegetarian.imgUrl } alt="Food" />
 									<br />
 										{ vegetarian.name }
-                </Link>
-      				
+            </Link>
+
       			</div>
       		)});
 		return(
 			<div className="row">
-
-				<h1 className="animate">Ah someone who enjoys a good vegetable or two.</h1>
 				<h1 className="animate"> What looks good to you here?</h1>
-				<Link to="/vegecho"><button id="choiceButton">Let us choose for you.</button></Link>
+				<Link to="/vegecho"><button id="choiceButton" className="w3-btn w3-white w3-border w3-border-red w3-round-large">Let us choose for you.</button></Link>
 				<h3>I&#8217;m thinking...</h3>
 
 				{ vegetarian }

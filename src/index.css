@@ -1,33 +1,85 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	background-color: #f3f4e6;
-	color: #ffffff;
-	background-image: url(./img/Linen-Background.jpg);
+	background-color: #fff;
+	color: #5e5b52;
+	/*background-image: url(./img/Linen-Background.jpg);*/
 }
 
 /*div{
 	margin-top: 50px;
 }*/
 
-h2, h3 {
-	color: #ffac41;
+h1,h2, h3 {
+	color: #5e5b52;
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 25px;;
 }
 
 a{
 	font-family: 'Montserrat', sans-serif;
 	/*color: #FBD8C5;*/
-	color: #886d42;
+	color: #5e5b52;
 	text-decoration: none;
 	font-size: 30px;
 }
 
-img{
+#choices img {
 	height: 150px;
 	width: 150px;
-	border: solid 5px #886d42;
+	border: solid 5px #5e5b52;
 	border-radius: 100%;
 }
+
+#choices img:hover{
+	height: 250px;
+	width: 250px;
+	border: solid 10px #5e5b52;
+	border-radius: 100%;
+}
+
+#randomchoices img {
+	height: 250px;
+	width: 250px;
+	border: solid 10px #5e5b52;
+	border-radius: 100%;
+}
+
+.active.btn.btn-link {
+ background-color: #ffac41;
+ border: none;
+ color: white;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ border-radius: 12px !important;
+}
+
+.btn.btn-link {
+ background-color: #17bebb;
+ border: none;
+ color: white;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ border-radius: 12px !important;
+}
+
+.list-group{
+	border: 2px solid #ffac41;
+}
+
+.border{
+	border: black 1px dashed;
+}
+
 
 .navbar-default {
 	border-color: #f2b500;
@@ -41,11 +93,11 @@ ul {
 
 .header{
 	/*background: #7ab4a6;*/
-  background: #f1dbbd;
+  background: #628395;
 }
 
 h1.appName{
-	font-family: 'Croissant One', cursive;
+	font-family: 'Muli', cursive;
 	float: left;
 	font-size: 50px;
   color: #886d42;
@@ -54,6 +106,7 @@ h1.appName{
 .headerLinks{
 	float: right;
 	font-family: 'Lemon', cursive;
+	margin-top: 50px;
 }
 
 ul.headerLinks li {
@@ -61,15 +114,37 @@ ul.headerLinks li {
   margin-right: 50px;
 }
 
+ul.headerLinks li a{
+	  color: #fff !important;
+}
+
+
 ul.headerLinks a:hover, a:default, a:active, a:link {
 	text-decoration: none;
 }
 
 .active, ul.headerLinks a:focus {
-	color: black;
+	color: white;
 	text-decoration: none;
-	font-family: 'Croissant One',fantasy;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
+	background-color: #ffac41;
+	padding: 5px;
+	border-radius: 12px;
+	font-weight: bold;
+}
+
+.venues {
+	float: right;
+	color: #000000;
+}
+
+.venueList {
+	text-align: left;
+}
+
+.venueList hr {
+	border-bottom: 2px #000000 dashed;
 }
 
 footer{
@@ -82,10 +157,17 @@ footer{
 	color: #000000;
 }
 
-.jSlots-wrapper {  
-    overflow: hidden; /* to hide the magic */  
-    height: 40px; /* whatever the height of your list items are */  
-    display: inline-block; /* to size width correctly, can use float too, or width*/  
-    border: 1px solid #999;  
-}  
+.map {
+ height: 500px;
+ width: 630px;
+ float: left;
+}
 
+#choiceButton {
+	margin-bottom: 11px;
+	background-color: #ffac41 !important;
+	border-color: #17bebb !important;
+	color: #ffffff !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
