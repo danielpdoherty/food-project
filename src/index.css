@@ -34,7 +34,14 @@ a{
 	border-radius: 100%;
 }
 
-img:hover{
+#choices img:hover{
+	height: 250px;
+	width: 250px;
+	border: solid 10px #886d42;
+	border-radius: 100%;
+}
+
+#randomchoices img {
 	height: 250px;
 	width: 250px;
 	border: solid 10px #886d42;
@@ -90,7 +97,7 @@ ul {
 }
 
 h1.appName{
-	font-family: 'Croissant One', cursive;
+	font-family: 'Muli', cursive;
 	float: left;
 	font-size: 50px;
   color: #886d42;
@@ -117,6 +124,19 @@ ul.headerLinks a:hover, a:default, a:active, a:link {
 	font-weight: bold;
 }
 
+.venues {
+	float: right;
+	color: #000000;
+}
+ 
+.venueList {
+	text-align: left;
+}
+
+.venueList hr {
+	border-bottom: 2px #000000 dashed;
+}
+
 footer{
 	margin-top: 50px;
 	color: #000000;
@@ -129,5 +149,6 @@ footer{
 
 .map {
  height: 500px;
- width: 700px;
+ width: 630px;
+ float: left;
 }
