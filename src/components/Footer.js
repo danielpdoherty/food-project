@@ -5,7 +5,7 @@ class Footer extends Component{
 		return(
 			<footer>
 				<img src="#" alt="DineTuning" className="footerImage"/>
-				<p></p>
+				<p>2017</p>
 			</footer>
 			);
 	}
