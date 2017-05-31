@@ -3,84 +3,84 @@
     "omnivore": [
       {
       	"name": "Burger",
-      	"imgUrl": "/img/burger.jpg",
+      	"imgUrl": "/food-project/static/media/burger.jpg",
       	"searchTerm": "burger"
       		},
           {    	
       	"name": "Pizza",
-      	"imgUrl": "/img/meatpizza.jpg",
+      	"imgUrl": "/food-project/static/media/meatpizza.jpg",
       	"searchTerm": "pizza"
       		},
           {    	
       	"name": "Tacos",
-      	"imgUrl": "/img/tacos.jpg",
+      	"imgUrl": "/food-project/static/media/tacos.jpg",
       	"searchTerm": "tacos"
       		},
           {
         "name": "Steak",
-        "imgUrl": "/img/steak.jpg",
+        "imgUrl": "/food-project/static/media/steak.jpg",
         "searchTerm": "steak"
           },
           {
         "name": "Pulled Pork",
-        "imgUrl": "/img/pulledpork.jpg",
+        "imgUrl": "/food-project/static/media/pulledpork.jpg",
         "searchTerm": "bbq"
           },
           {
         "name": "Chicken Wings",
-        "imgUrl": "/img/chickenwings.jpg",
+        "imgUrl": "/food-project/static/media/chickenwings.jpg",
         "searchTerm": "wings"
           },
           {
         "name": "Kung Pao Chicken",
-        "imgUrl": "/img/kungpaochicken.jpg",
+        "imgUrl": "/food-project/static/media/kungpaochicken.jpg",
         "searchTerm": "chinese"
           },
           {
         "name": "Kebab",
-        "imgUrl": "/img/kebab.jpg",
+        "imgUrl": "/food-project/static/media/kebab.jpg",
         "searchTerm": "kebab"
           }
   		],
   	"vegetarian": [
       {
   			"name": "Salad",
-      		"imgUrl": "/img/salad.jpg",
+      		"imgUrl": "/food-project/static/media/salad.jpg",
       		"searchTerm": "salad"
   			   },
           {
   			"name": "Falafel",
-      		"imgUrl": "/img/falafel.jpg",
+      		"imgUrl": "/food-project/static/media/falafel.jpg",
       		"searchTerm": "falafel"
   			   },
           {
           "name": "Brussels Sprouts",
-        "imgUrl": "/img/brusselsprouts.jpg",
+        "imgUrl": "/food-project/static/media/brusselsprouts.jpg",
         "searchTerm": "southern food"
           },
           {
         "name": "Veggie Tacos",
-        "imgUrl": "/img/veggietacos.jpg",
+        "imgUrl": "/food-project/static/media/veggietacos.jpg",
         "searchTerm": "tacos"
           },
           {
         "name": "Hummus",
-        "imgUrl": "/img/hummus.jpg",
+        "imgUrl": "/food-project/static/media/hummus.jpg",
         "searchTerm": "mediterranean"
           },
           {
         "name": "Fried Rice",
-        "imgUrl": "/img/friedrice.jpg",
+        "imgUrl": "/food-project/static/media/friedrice.jpg",
         "searchTerm": "asian"
           },
           {
         "name": "Pizza",
-        "imgUrl": "/img/pizza.png",
+        "imgUrl": "/food-project/static/media/pizza.png",
         "searchTerm": "pizza"
           },
           {
         "name": "Tofu",
-        "imgUrl": "/img/tofu.jpg",
+        "imgUrl": "/food-project/static/media/tofu.jpg",
         "searchTerm": "vegetarian"
           }
   		]
